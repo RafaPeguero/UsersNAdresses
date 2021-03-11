@@ -1,0 +1,133 @@
+
+<br>
+<br>
+
+<div id="main-title" >
+
+	<div class="container" style="text-align: center;">
+		<h2>Costumers List</h2>
+	</div>
+</div>
+
+<br>
+<br>
+<div class="container">
+  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#AddCostumerModal">Add a Costumer</button>
+</div>
+<br>
+
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Last name</th>
+        <th scope="col">Phone number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Actions</th>
+        <th scope="col">See Adresses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let costumer of Costumers; let i = index;">
+        <td>{{costumer.customer_ID}}</td>
+        <td>{{costumer.name}}</td>
+        <td>{{costumer.last_Name}}</td>
+        <td>{{costumer.phone_number }}</td>
+        <td>{{costumer.email }}</td>
+        <td>
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group" style="margin-right: 8px;">
+              <button value="Editbtn" (click)="GetCostumer(costumer.customer_ID)" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#AddCostumerModal">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pen" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M5.707 13.707a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391L10.086 2.5a2 2 0 0 1 2.828 0l.586.586a2 2 0 0 1 0 2.828l-7.793 7.793zM3 11l7.793-7.793a1 1 0 0 1 1.414 0l.586.586a1 1 0 0 1 0 1.414L5 13l-3 1 1-3z"/>
+                  <path fill-rule="evenodd" d="M9.854 2.56a.5.5 0 0 0-.708 0L5.854 5.855a.5.5 0 0 1-.708-.708L8.44 1.854a1.5 1.5 0 0 1 2.122 0l.293.292a.5.5 0 0 1-.707.708l-.293-.293z"/>
+                  <path d="M13.293 1.207a1 1 0 0 1 1.414 0l.03.03a1 1 0 0 1 .03 1.383L13.5 4 12 2.5l1.293-1.293z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group" data-toggle="modal" data-target="#DeleteModal">
+              <button (click)="SelectedCostumerId = costumer.customer_ID"type="button" class="btn btn-secondary"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/></svg>
+              </button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" style="margin-left: 35px;"[routerLink]="['/Costumer/' + costumer.customer_ID]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+              <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+              <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    <!-- SET/EDIT MODAL -->
+    <div class="modal fade" id="AddCostumerModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Add a Costumer</h5>
+              <button (click)="resetForm()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="" [formGroup]="AddCostumerForm">
+                <div *ngIf="FormIsInvalid" class="alert alert-danger" role="alert">
+                  Existen errores en el formulario, debe corregirlos para poder continuar
+                </div>
+    
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Name</label>
+                  <input formControlName="Name" type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Last name</label>
+                  <input formControlName="Last_Name"type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Phone number</label>
+                  <input formControlName="Phone_number" mask="(000)-000-0000" type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input formControlName="Email" type="text" class="form-control">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button value="submit" (click)="Submit()"type="button" class="btn btn-success" [attr.Data-dismiss]="AddCostumerForm.invalid ?'': 'modal'" >Save</button>
+              <button (click)="resetForm()" type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <!-- Confirmation Modal for Delete action -->
+      <div class="modal fade" id="DeleteModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Delete a costumer</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h4>¿Are you sure?</h4>
+            </div>
+            <div class="modal-footer">
+              <button (click)="DeleteCostumer()" type="button" class="btn btn-primary" data-dismiss="modal">Yes!</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
