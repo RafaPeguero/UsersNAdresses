@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\r.peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj": {}
+    "C:\\Users\\Rafael Peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\r.peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj": {
+    "C:\\Users\\Rafael Peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\r.peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj",
+        "projectUniqueName": "C:\\Users\\Rafael Peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj",
         "projectName": "CustomersControlApi",
-        "projectPath": "C:\\Users\\r.peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj",
-        "packagesPath": "C:\\Users\\r.peguero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\r.peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\obj\\",
+        "projectPath": "C:\\Users\\Rafael Peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\CustomersControlApi.csproj",
+        "packagesPath": "C:\\Users\\Rafael Peguero\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rafael Peguero\\Documents\\Oriontek-TechInterview\\backend\\CustomersControlApi\\CustomersControlApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\r.peguero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rafael Peguero\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +82,8 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

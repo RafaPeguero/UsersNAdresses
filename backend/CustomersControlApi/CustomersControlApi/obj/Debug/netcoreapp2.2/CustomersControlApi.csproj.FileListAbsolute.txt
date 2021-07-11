@@ -31,3 +31,20 @@ C:\Users\r.peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\
 C:\Users\r.peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.RazorTargetAssemblyInfo.cache
 C:\Users\r.peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.dll
 C:\Users\r.peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.pdb
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\web.config
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\CustomersControlApi.deps.json
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\CustomersControlApi.runtimeconfig.json
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\CustomersControlApi.runtimeconfig.dev.json
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\CustomersControlApi.dll
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\bin\Debug\netcoreapp2.2\CustomersControlApi.pdb
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.csprojAssemblyReference.cache
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.RazorAssemblyInfo.cache
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.RazorAssemblyInfo.cs
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.AssemblyInfoInputs.cache
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.AssemblyInfo.cs
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.RazorTargetAssemblyInfo.cache
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.dll
+C:\Users\Rafael Peguero\Documents\Oriontek-TechInterview\backend\CustomersControlApi\CustomersControlApi\obj\Debug\netcoreapp2.2\CustomersControlApi.pdb
